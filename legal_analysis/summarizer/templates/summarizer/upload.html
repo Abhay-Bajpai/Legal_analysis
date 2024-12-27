@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="document">Upload your document:</label>
+    <input type="file" name="document" id="document">
+    <button type="submit">Submit</button>
+</form>
