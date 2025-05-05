@@ -1,92 +1,70 @@
-Legal Analysis
-A Python-based toolkit for performing natural language processing (NLP) and machine learning-driven legal document analysis. This project aims to assist legal professionals, researchers, and developers in extracting insights and performing classification on legal texts using modern NLP techniques.
+# ⚖️ Legal Analysis
 
-📌 Features
-Text Preprocessing: Efficient tokenization, stopword removal, and lemmatization tailored for legal texts.
+A Python toolkit for performing Natural Language Processing (NLP) and machine learning on legal documents. This project helps in analyzing, preprocessing, and classifying legal text data to support legal research and document understanding.
 
-Exploratory Data Analysis (EDA): Visualize term frequency, class distribution, and word clouds.
+---
 
-Model Training & Evaluation: Train classification models to categorize legal documents (e.g., judgments, petitions).
+## 📂 Project Structure
 
-Modular Design: Clean, maintainable, and extensible code structure using Python modules and classes.
-
-📁 Project Structure
-graphql
-Copy
-Edit
 legal_analysis/
-│
-├── eda.py                # EDA and visualization functions
-├── helper.py             # Text preprocessing utilities
-├── load_data.py          # Data loading functions
-├── model.py              # Model training and evaluation logic
-├── train.py              # Entry point for training pipeline
-├── utils.py              # Additional helper functions
-└── requirements.txt      # Python dependencies
-🚀 Getting Started
-Prerequisites
-Make sure you have Python 3.7+ and pip installed.
+├── eda.py # Visualization and exploratory data analysis
+├── helper.py # Text preprocessing functions
+├── load_data.py # Data loading logic
+├── model.py # ML model creation and evaluation
+├── train.py # Pipeline to train and test the model
+├── utils.py # Utility functions
+└── requirements.txt # Python dependencies
 
-Installation
-Clone the repository:
-
-bash
+yaml
 Copy
 Edit
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Python 3.7 or above
+- pip package manager
+
+### 🔧 Installation
+
+```bash
 git clone https://github.com/Abhay-Bajpai/Legal_analysis.git
 cd Legal_analysis/legal_analysis
-Create and activate a virtual environment (optional but recommended):
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
-Usage
-To train and evaluate a model on your dataset:
+⚙️ Usage
+To start training and evaluating your model:
 
 bash
 Copy
 Edit
 python train.py
-Ensure that your data is correctly formatted and loaded via load_data.py.
+Ensure that your data is compatible with the expected format in load_data.py.
 
-🧠 Models & Techniques
+🧠 Features
+Legal text preprocessing with stopword removal and lemmatization
+
 TF-IDF vectorization
 
-Machine Learning classifiers (e.g., Logistic Regression, SVM)
+ML model training and evaluation (e.g., Logistic Regression, SVM)
 
-NLP preprocessing using nltk and scikit-learn
+Word clouds, frequency plots, and class distribution visualizations
 
-📊 Visualizations
-Includes support for:
+📈 Planned Improvements
+Add support for transformer-based models (e.g., BERT)
 
-Word clouds
+Build a web interface for easier usage
 
-Frequency distribution plots
-
-Class balance visualizations
-
-📚 Future Enhancements
-Integration with transformer-based models (e.g., BERT)
-
-Web-based UI for interactive document analysis
-
-More granular legal classification (case type, court level, etc.)
+Expand to multi-label legal classifications
 
 🤝 Contributing
-Contributions are welcome! Please fork the repository, make your changes, and open a pull request.
+Pull requests are welcome! Please open an issue to discuss your proposed changes.
 
-📜 License
-This project is open-source and available under the MIT License.
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
 👤 Author
 Abhay Bajpai
 GitHub
-
